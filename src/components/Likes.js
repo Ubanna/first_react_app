@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Header from './Header';
 
 
 class Likes extends Component {
@@ -31,6 +32,7 @@ class Likes extends Component {
     render(){
         return(
             <div>
+                <Header title="MY LIKES APP"/>
                 <h1>Welcome to my Likes App</h1>
                 <h3>Likes: {this.state.likes}</h3>
                 <button onClick={this.increaseLikes}>Like</button>

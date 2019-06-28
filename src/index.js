@@ -6,6 +6,7 @@ import TodoItems from './components/TodoItems';
 import * as serviceWorker from './serviceWorker';
 import Todo from './components/Todo';
 import Likes from './components/Likes';
+import LocalStorage from './components/Localstorage';
 
 
 ReactDOM.render(<Todo />, document.getElementById('root'));
