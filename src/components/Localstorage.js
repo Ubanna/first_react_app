@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Header from '../components/Header';
 
 
 class LocalStorage extends Component {
@@ -14,6 +15,7 @@ class LocalStorage extends Component {
      const personParse = JSON.parse(getPerson)
         return(
           <div>
+               <Header title="LocalStorage" />
               <p>The stringified version is: </p>
             <h1>{getPerson}</h1>
 
