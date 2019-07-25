@@ -1,0 +1,33 @@
+.container {
+    width: 250px;
+    height: 80px;
+    border-radius: 5px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: grey;
+    margin-top: 100px;
+}
+
+.title {
+    text-align: center;
+    background: #e1e1e1;
+    padding: 50px;
+    margin-bottom: 30px;
+}
+
+.button {
+    border: none; 
+    padding: 7px 7px;
+    font-size: 15px; 
+    cursor: pointer;
+    margin: 6px;
+    border-radius: 3px;
+}
+
+@media only screen and (max-width:850px) {
+.title {
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+}

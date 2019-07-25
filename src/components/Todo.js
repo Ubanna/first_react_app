@@ -81,8 +81,8 @@ class Todo extends Component {
         const {todoItems, newTodo } = this.state
         return (
             <div className={todoStyles.container}>
-            <Header title="MY TODO TITLE"/>
-            <h1 className={todoStyles.title}>Welcome to my todo App</h1>
+            <Header title="MY TODO APP"/>
+            <h1 className={todoStyles.title}>Welcome to my Todo App</h1>
             <div className={todoStyles.wrapper}>
             <div className={todoStyles.forms}>
             <form onSubmit={this.handleSubmit}>

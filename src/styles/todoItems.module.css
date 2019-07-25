@@ -21,3 +21,15 @@
 .removeButton:hover {
     background: red;
 }
+
+@media only screen and (max-width:850px) {
+    .todoItems {
+        padding: 4px;
+        margin: 3px 0;
+    }
+
+    .removeButton {
+        padding: 3px;
+    }
+
+}

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Header from './Header';
+import likesStyles from "../styles/likes.module.css";
 
 
 class Likes extends Component {
@@ -33,11 +34,15 @@ class Likes extends Component {
         return(
             <div>
                 <Header title="MY LIKES APP"/>
-                <h1>Welcome to my Likes App</h1>
+                <h1 className={likesStyles.title}>Welcome to my Likes App</h1>
+                <div className={likesStyles.container}>
                 <h3>Likes: {this.state.likes}</h3>
-                <button onClick={this.increaseLikes}>Like</button>
-                <button onClick={this.decreaseLikes}>Unlike</button>
-                <button onClick={this.resetLikes}>Reset</button>
+                <button className={likesStyles.button} onClick={this.increaseLikes}>Like<i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+                <button className={likesStyles.button} onClick={this.decreaseLikes}>Unlike<i class="fa fa-thumbs-down" aria-hidden="true"></i>
+</button>
+                <button className={likesStyles.button} onClick={this.resetLikes}>Reset<i class="fa fa-power-off" aria-hidden="true"></i></button>
+         
+                </div>
 
             </div>
         )

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import Header from '../components/Header';
+import lsStyles from "../styles/ls.module.css";
 
 
 class LocalStorage extends Component {
@@ -17,10 +18,10 @@ class LocalStorage extends Component {
           <div>
                <Header title="LocalStorage" />
               <p>The stringified version is: </p>
-            <h1>{getPerson}</h1>
+            <h1 className={lsStyles.text}>{getPerson}</h1>
 
             <p>The parsed version is:</p>
-            <h3>{personParse.name} and {personParse.age}</h3>
+            <h3 className={lsStyles.text}>{personParse.name} and {personParse.age}</h3>
 
             </div>
         )

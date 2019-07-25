@@ -31,3 +31,24 @@
     color: red;
     font-size: 1.1rem;
 }
+
+@media only screen and (max-width:850px) {
+    .headerContainer ul li a {
+        font-size: 14px
+    }
+
+    .headerContainer h2 {
+       font-size: 16px
+    }
+
+
+.headerContainer ul {
+    display: flex;
+}
+
+
+.headerContainer ul li {
+    padding-right: 5px;
+}
+
+}
